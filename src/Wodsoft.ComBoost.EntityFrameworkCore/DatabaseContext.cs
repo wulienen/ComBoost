@@ -12,6 +12,9 @@ using System.Linq.Expressions;
 
 namespace Wodsoft.ComBoost.Data.Entity
 {
+    /// <summary>
+    /// 数据上下文实现类
+    /// </summary>
     public class DatabaseContext : IDatabaseContext
     {
         private static ConcurrentDictionary<Type, IEnumerable<Type>> _CachedSupportTypes;

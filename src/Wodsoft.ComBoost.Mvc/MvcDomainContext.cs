@@ -8,6 +8,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Wodsoft.ComBoost.Mvc
 {
+    /// <summary>
+    /// MVC领域上下文
+    /// </summary>
     public class MvcDomainContext : DomainContext
     {
         public MvcDomainContext(Controller controller)

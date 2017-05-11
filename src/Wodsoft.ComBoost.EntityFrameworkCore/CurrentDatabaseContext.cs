@@ -27,6 +27,7 @@ namespace Wodsoft.ComBoost.Data.Entity
             }
         }
 #else
+        //保证不同线程读写数据库上下文是同一个共享变量
         System.Threading.AsyncLocal<DatabaseContext> _Context = new System.Threading.AsyncLocal<DatabaseContext>();
         public DatabaseContext Context
         {
